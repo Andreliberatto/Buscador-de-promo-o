@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Busca de Produto</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Busca de Produto</h1>
+
+    <div class="search-container">
+      <input type="text" id="produto" placeholder="Digite o nome do produto">
+      <button onclick="buscarProduto()">Buscar</button>
+    </div>
+
+    <div class="tabs">
+      <button class="tablink" onclick="openTab(event, 'normal')">Preço Normal</button>
+      <button class="tablink" onclick="openTab(event, 'promocoes')">Promoções</button>
+    </div>
+
+    <div id="normal" class="tabcontent">
+      <h2>Produtos com Preço Normal</h2>
+      <div id="produtos-normal" class="produtos-lista"></div>
+    </div>
+
+    <div id="promocoes" class="tabcontent">
+      <h2>Promoções</h2>
+      <div id="produtos-promocoes" class="produtos-lista"></div>
+    </div>
+
+    <footer>
+      <p>Desenvolvedor: André Amorim Liberatto</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
