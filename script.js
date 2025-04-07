@@ -26,7 +26,6 @@ function buscarProduto() {
           }
         });
   
-        // Mostrar a aba de Preço Normal por padrão
         openTab(event, 'normal');
       })
       .catch(error => {
